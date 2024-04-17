@@ -1,5 +1,5 @@
 # LineHost
-[link do projeto](https://alinesimoncello.github.io/LineHost/)
+[link do projeto](https://alinesimoncello.github.io/Projeto-LineHost/)
 
 ## Sobre o site:
 
