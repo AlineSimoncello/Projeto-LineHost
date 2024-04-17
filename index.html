@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LineHost</title>
+    <link rel="shortcut icon" href="img/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+
+      <header id="header">
+        
+          <div class="logo">
+            <a href="#home"
+              ><img id="lg" src="img/logo01.png" alt="logo do site"
+            /></a>
+          </div>
+          <nav class="navbar-container">
+            <div id="btn-mobile"><i class="ri-menu-line"></i><i class="ri-close-large-line"></i></div>
+            <ul class="navbar-items">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#pricing-container">Preços</a></li>
+              <li><a href="#contact">Contato</a></li>
+              <li><a href="#" class="default-btn">Entrar</a></li>
+            </ul>
+          </nav>
+       
+      </header>
+
+      <main>
+        <div class="main-banner" id="home">
+          <h1>O melhor serviço de hospedagem</h1>
+          <p>Velocidade, performance e segurança!</p>
+        </div>
+        <section class="services-container">
+          <div class="services">
+            <div class="small-image">
+              <img src="./img/security.jpg" alt="segurança" id="s-image" />
+            </div>
+            <div class="text">
+              <h3>Segurança</h3>
+              <p>
+                Na LineHost, sua tranquilidade é nossa prioridade. Todos os
+                planos incluem certificado SSL gratuito, firewall avançado e
+                backups automáticos diários. Monitoramento 24/7 por
+                especialistas e autenticação de dois fatores (2FA) garantem a
+                proteção contínua do seu site. Conte conosco para uma
+                experiência de hospedagem segura e confiável.
+              </p>
+            </div>
+            <div class="service-image">
+              <img
+                src="./img/security.jpg"
+                class="image-service"
+                alt="imagem sobre segurança"
+              />
+            </div>
+          </div>
+          <div class="services">
+            <div class="small-image">
+              <img
+                src="./img/performance.jpeg"
+                alt="performance"
+                id="s-image"
+              />
+            </div>
+            <div class="service-image">
+              <img
+                src="./img/performance.jpeg"
+                class="image-service"
+                alt="imagem sobre performance"
+              />
+            </div>
+            <div class="text">
+              <h3>Performance</h3>
+              <p>
+                Oferecemos desempenho excepcional para seu site decolar. Nossos
+                servidores rápidos e confiáveis garantem tempos de carregamento
+                rápidos, otimizando a experiência do usuário. Utilizamos
+                tecnologias de ponta, como armazenamento SSD e CDN, para
+                impulsionar a performance. Conte conosco para um serviço de
+                hospedagem que coloca a velocidade e a eficiência em primeiro
+              </p>
+            </div>
+          </div>
+          <div class="services">
+            <div class="small-image">
+              <img src="./img/suport.png" alt="suporte" id="s-image" />
+            </div>
+            <div class="text">
+              <h3>Suporte 24/7</h3>
+              <p>
+                Nosso compromisso é oferecer suporte ininterrupto. Nossa equipe
+                dedicada está disponível 24 horas por dia, sete dias por semana,
+                para sanar suas dúvidas e resolver problemas rapidamente. Conte
+                conosco a qualquer momento. Estamos aqui para garantir a sua
+                tranquilidade, sempre.
+              </p>
+            </div>
+            <div class="service-image">
+              <img
+                src="./img/suport.png"
+                class="image-service"
+                alt="imagem sobre suporte"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="pricing-container" id="pricing-container">
+          <h2>Planos e Preços</h2>
+          <p>Selecione o plano que melhor atenda suas necessidades</p>
+          <div class="plans-container">
+            <div class="plan" id="planos">
+              <ul>
+                <li class="price">R$15/mês</li>
+                <li class="plan-name">Básico</li>
+                <li>2 GB de espaço</li>
+                <li>1 Subdomínio</li>
+                <li>25 contas de e-mail</li>
+                <li>C-panel</li>
+                <li>Suporte 24/7</li>
+                <li class="plan-btn">
+                  <a href="./cons/emContr.html" target="_blank">Saiba mais</a>
+                </li>
+              </ul>
+            </div>
+            <div class="plan" id="planos">
+              <ul>
+                <li class="price">R$30/mês</li>
+                <li class="plan-name">Dedicado</li>
+                <li>5 GB de espaço</li>
+                <li>10 Subdomínios</li>
+                <li>50 contas de e-mail</li>
+                <li>C-panel</li>
+                <li>Suporte 24/7</li>
+                <li class="plan-btn">
+                  <a href="./cons/emContr.html" target="_blank">Saiba mais</a>
+                </li>
+              </ul>
+            </div>
+            <div class="plan recommended" id="planos">
+              <p class="mv">Mais vendido</p>
+              <ul>
+                <li class="price">R$50/mês</li>
+                <li class="plan-name">Plus</li>
+                <li>10 GB de espaço</li>
+                <li>15 Subdomínios</li>
+                <li>100 contas de e-mail</li>
+                <li>C-panel</li>
+                <li>Suporte 24/7</li>
+                <li class="plan-btn">
+                  <a href="./cons/emContr.html" target="_blank">Saiba mais</a>
+                </li>
+              </ul>
+            </div>
+            <div class="plan" id="planos">
+              <ul>
+                <li class="price">R$100/mês</li>
+                <li class="plan-name">Cloud</li>
+                <li>20 GB de espaço</li>
+                <li>20 Subdomínios</li>
+                <li>200 contas de e-mail</li>
+                <li>C-panel</li>
+                <li>Suporte 24/7</li>
+                <li class="plan-btn">
+                  <a href="./cons/emContr.html" target="_blank">Saiba mais</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="searchdomain-container">
+          <h2>Qual domínio você quer para o seu site?</h2>
+          <p>Verifique se o domínio está disponível</p>
+          <form id="domainForm">
+            <input
+              type="text"
+              name="domain"
+              id="domain"
+              placeholder="Digite o domínio desejado"
+            />
+            <input type="submit" id="search-domain" value="Procurar domínio" />
+            <div class="container-resp">
+              <div class="resposta" id="resposta"></div>
+            </div>
+          </form>
+        </section>
+        <section class="contact-container" id="contact">
+          <h2>Mande uma mensagem</h2>
+          <p>
+            Envie a sua mensagem. Em até 3 horas um especialista entrará em
+            contato
+          </p>
+          <form class="sendMessage">
+            <div class="inputGroup">
+              <input type="text" name="name" id="name" placeholder="Seu nome" />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Seu e-mail"
+              />
+            </div>
+            <small id="validationEmail"></small>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Descreva a sua dúvida ou o seu projeto"
+            >
+            </textarea>
+            <small id="validationMessage"></small>
+            <input type="submit" id="btn-message" value="Enviar" />
+            <small id="validationForm"></small>
+          </form>
+        </section>
+      </main>
+      <div id="whatsapp-sticky" class="sticky">
+        <a
+          href="https://wa.me/+5511945870272?text=Ol%C3%A1,%20gostamos%20do%20seu%20portf%C3%B3lio.%20Poder%C3%ADamos%20agendar%20uma%20entrevista?%20"
+          target="_blank"
+        >
+          <img src="./img/whats-icone.png" alt="WhatsApp" />
+        </a>
+      </div>
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="row">
+            <div class="footer-col">
+              <h4>Sobre nós</h4>
+              <ul>
+                <li>
+                  <a href="./cons/emContr.html" target="_blank"
+                    >Sobre a LineHost</a
+                  >
+                </li>
+                <li>
+                  <a href="./cons/emContr.html" target="_blank"
+                    >Nossos serviços</a
+                  >
+                </li>
+                <li>
+                  <a href="./cons/emContr.html" target="_blank"
+                    >Nossa tecnologia</a
+                  >
+                </li>
+                <li>
+                  <a href="./cons/emContr.html" target="_blank"
+                    >Programa de afiliado</a
+                  >
+                </li>
+                <li>
+                  <a href="./cons/emContr.html" target="_blank">Blog</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Legal</h4>
+              <ul>
+                <li>
+                  <a href="./cons/emContr.html" target="_blank"
+                    >Política de privacidade</a
+                  >
+                </li>
+                <li>
+                  <a href="./cons/emContr.html" target="_blank"
+                    >Termos de uso</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Ajuda</h4>
+              <ul>
+                <li>
+                  <a href="./cons/emContr.html" target="_blank">FAQ</a>
+                </li>
+                <li>
+                  <a href="./cons/emContr.html" target="_blank">Tutoriais</a>
+                </li>
+                <li>
+                  <a href="./cons/emContr.html" target="_blank"
+                    >Opções de pagamento</a
+                  >
+                </li>
+                <li>
+                  <a href="./cons/emContr.html" target="_blank">Fale conosco</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Redes sociais</h4>
+              <div class="social-links">
+                <a href="../cons/emContr.html" target="_blank"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="./cons/emContr.html" target="_blank"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a href="./cons/emContr.html" target="_blank"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/aline-simoncello-perella-7ab43364/"
+                  target="_blank"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

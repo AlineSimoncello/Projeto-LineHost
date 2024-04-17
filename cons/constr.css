@@ -1,0 +1,39 @@
+body{
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica;
+}
+
+.logo {
+  margin: 25px 0 0 40px;
+}
+
+#lg {
+  width: 75px;
+  height: 55px;
+}
+
+.geral-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#img {
+  width: 950px;
+}
+
+.image h2 {
+  display: flex;
+  justify-content:  center;
+  color: rgb(19, 191, 221);
+  font-size: 42px;
+}
+
+.text a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+}
